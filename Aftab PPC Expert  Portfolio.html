@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aftab Farooq | Amazon PPC Expert & FBA Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #232F3E;
+            --secondary: #FF9900;
+            --accent: #146EB4;
+            --light: #F2F3F3;
+            --dark: #131A22;
+            --success: #00A65A;
+            --gray: #6C737A;
+            --light-gray: #E6E8EB;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #e68a00;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background: white;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            padding: 160px 0 100px;
+            margin-top: 80px;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        
+        .hero-text {
+            flex: 1;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .hero h3 {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .stats {
+            display: flex;
+            margin-top: 30px;
+            gap: 20px;
+        }
+        
+        .stat-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent);
+        }
+        
+        .stat-box h4 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 5px;
+        }
+        
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Services Section */
+        .services {
+            background: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 35px 30px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--secondary);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Case Studies Section */
+        .case-studies {
+            background: var(--light);
+        }
+        
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+        }
+        
+        .case-study {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .case-study:hover {
+            transform: translateY(-5px);
+        }
+        
+        .case-header {
+            padding: 25px 30px;
+            background: var(--primary);
+            color: white;
+        }
+        
+        .case-header h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.6rem;
+        }
+        
+        .case-content {
+            padding: 30px;
+        }
+        
+        .case-metrics {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .metric {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--success);
+            line-height: 1;
+        }
+        
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 5px;
+        }
+        
+        .case-image-container {
+            margin: 20px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .case-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background: white;
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--light);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .testimonial-text:before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--secondary);
+            opacity: 0.3;
+            position: absolute;
+            left: -10px;
+            top: -20px;
+            font-family: serif;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        
+        /* Contact Section */
+        .contact-content {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        
+        .contact-info-item i {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-right: 15px;
+            width: 30px;
+            margin-top: 5px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: border 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 70px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        
+        .footer-logo span {
+            color: var(--secondary);
+        }
+        
+        .footer-about p {
+            opacity: 0.8;
+            line-height: 1.7;
+        }
+        
+        .footer-links h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1100px) {
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-content, .about-content, .contact-content {
+                flex-direction: column;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .stats {
+                flex-direction: column;
+            }
+            
+            .case-metrics {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .testimonial-slider {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero {
+                padding: 140px 0 80px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Aftab<span>Farooq</span></a>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Aftab Farooq</h1>
+                    <h3>Amazon PPC Expert | FBA & Listing Optimization Specialist</h3>
+                    <p>🚀 Amazon PPC Specialist helping brands lower ACOS, boost ROAS, and scale with data-driven ads + SEO-optimized listings. Expert in FBA, keyword research, competitor analysis, A+ Content, ranking, and full account management.</p>
+                    <div style="margin-top: 30px;">
+                        <a href="#contact" class="btn">Get Free Audit</a>
+                        <a href="#case-studies" class="btn btn-secondary" style="margin-left: 15px;">View Results</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Hero Image: Your Professional Photo -->
+                    <img src="https://i.ibb.co/XxwzQ0CR/My-image.png" alt="Aftab Farooq - Amazon Growth Strategist" style="max-height: 450px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm an Amazon Growth Strategist helping brands scale to 7–8 figures through data-driven PPC, SEO, and full A-Z store management. I specialize in increasing visibility, boosting conversions, and driving profitable growth on Amazon.</p>
+                    <p>I combine data-driven Amazon PPC management, conversion-focused listing optimization, and full-stack account management to help brands scale profitably. My approach centers on lowering ACOS, boosting ROAS, improving TACoS, and turning ad spend into sustainable revenue growth.</p>
+                    <p>I use deep keyword research, competitor analysis, and marketplace intelligence to build high-impact advertising systems across Sponsored Products, Sponsored Brands, Sponsored Display, and Amazon DSP.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <h4>+4</h4>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>75%</h4>
+                            <p>Avg. Sales Increase</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>50%</h4>
+                            <p>Avg. ACOS Reduction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- About Image: Amazon PPC Expert -->
+                    <img src="https://i.ibb.co/chDLGrYy/Amazon-FBA-Amazon-PPC-Ecommerce-Amazon-SEO.png" alt="Amazon Growth Strategist Experience">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Services I Provide</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Amazon PPC Management & Optimization</h3>
+                    <p>Sponsored Products / Brands / Display / DSP. Scaling strategies, ACOS reduction, ROAS growth. Full PPC setup, segmentation & automation.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Keyword & Competitor Research</h3>
+                    <p>High-intent keyword discovery. Competitor gap analysis & market share insights using Helium10, JungleScout, and Amazon Ads Console.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Campaign Audits & Profitability Optimization</h3>
+                    <p>Wasted spend removal. ACoS/ROAS improvement plans. Weekly reports + data-backed recommendations.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Product Listing Optimization</h3>
+                    <p>Titles, bullets, SEO, backend keywords. A+ Content, Storefront creation. Indexing fixes & conversion improvement.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Product Launch & Ranking Strategy</h3>
+                    <p>PPC launch frameworks. Organic keyword ranking momentum. Clean, scalable campaign architecture.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Amazon FBA & Account Management</h3>
+                    <p>Inventory forecasting & demand planning. Catalog management & variation setup. Suppressed listing fixes & operational support.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <!-- PPC Expert Image -->
+                <img src="https://i.ibb.co/x8JjzS5D/Untitled-design.jpg" alt="Amazon PPC Campaigns Expert" style="max-width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <div class="section-title">
+                <h2>Case Studies & Results</h2>
+            </div>
+            <div class="case-studies-grid">
+                <div class="case-study">
+                    <div class="case-header">
+                        <h3>75% Increase in Overall Sales</h3>
+                        <p>Within 4 months | 10/02/2024 - 04/02/2025</p>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <div class="metric-value">75%</div>
+                                <div class="metric-label">Sales Increase</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">4</div>
+                                <div class="metric-label">Months</div>
+                            </div>
+                        </div>
+                        <p><strong>Strategy:</strong> Focus on high-sales products with low ACOS, optimizing PPC campaigns through data-driven strategies and adjustments for maximum efficiency.</p>
+                        
+                        <!-- Case Study 1: 75% Increase -->
+                        <div class="case-image-container">
+                            <img src="https://i.ibb.co/5hZ70yp7/Amazon-PPC-Optimization-Case-Study.png" alt="75% Increase in Sales Case Study">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-study">
+                    <div class="case-header">
+                        <h3>TACOS Cut From 14% to 6%</h3>
+                        <p>From $14K to $7K Monthly Spend | Overall Sales maintained at $100K/mo</p>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-metrics">
+                            <div class="metric">
+                                <div class="metric-value">57%</div>
+                                <div class="metric-label">TACOS Reduction</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">$100K</div>
+                                <div class="metric-label">Monthly Sales</div>
+                            </div>
+                        </div>
+                        <p><strong>Strategy:</strong> Optimized PPC campaigns through data-driven strategies and adjustments, reducing wasted spend while maintaining sales volume.</p>
+                        
+                        <!-- Case Study 2: TACOS Reduction -->
+                        <div class="case-image-container">
+                            <img src="https://i.ibb.co/jvx2Wkss/Untitled-design.png" alt="TACOS Reduction Case Study">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <!-- Updated Listing Expert Image -->
+                <img src="https://i.ibb.co/Qv12C4zV/IMG-20251205-WA0016.jpg" alt="Amazon Product Listing Expert" style="max-width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Clients Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-text">
+                    Aftab transformed our Amazon PPC strategy. Within 3 months, our ACOS dropped from 32% to 18% while sales increased by 65%. His data-driven approach and proactive communication made him an invaluable partner for our brand.
+                </div>
+                <div class="testimonial-author">
+                    Sarah Johnson, E-commerce Director at HealthTech Brand
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get Your Free PPC Audit</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Scale Your Amazon Business</h3>
+                    <p>I work best with private label brands, agencies, and ecommerce startups looking for a long-term Amazon advertising partner.</p>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-bullseye"></i>
+                        <div>
+                            <h4>Clear Performance KPIs</h4>
+                            <p>ACOS, ROAS, TACoS, CVR, CTR, organic rank tracking</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>Weekly Reports</h4>
+                            <p>Data-backed recommendations & transparent communication</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-rocket"></i>
+                        <div>
+                            <h4>Faster Results</h4>
+                            <p>Better keyword targeting & scalable campaign architecture</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <i class="fas fa-handshake"></i>
+                        <div>
+                            <h4>Proactive Partner</h4>
+                            <p>Strong communication, transparency & proactive insights</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="auditForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="brand">Brand / Product Category</label>
+                            <input type="text" id="brand" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="current-sales">Current Monthly Amazon Sales ($)</label>
+                            <select id="current-sales" class="form-control" required>
+                                <option value="">Select Range</option>
+                                <option value="0-5k">$0 - $5,000</option>
+                                <option value="5k-20k">$5,000 - $20,000</option>
+                                <option value="20k-50k">$20,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k+">$100,000+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">What are your main Amazon challenges?</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="e.g., High ACOS, low conversion rate, poor ranking..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%; padding: 16px;">Request Free Audit</button>
+                        <p style="margin-top: 15px; font-size: 0.9rem; color: var(--gray); text-align: center;">I'll send a short intake form and schedule a 15-minute strategy call to review your PPC performance.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Aftab<span>Farooq</span></div>
+                    <p>Amazon PPC Expert & FBA Specialist helping brands scale profitably on Amazon through data-driven advertising and optimization strategies.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">PPC Management</a></li>
+                        <li><a href="#services">Keyword Research</a></li>
+                        <li><a href="#services">Listing Optimization</a></li>
+                        <li><a href="#services">FBA Management</a></li>
+                        <li><a href="#services">Campaign Audits</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <p style="color: #ccc; margin-bottom: 15px;">Ready to scale your Amazon business?</p>
+                    <a href="#contact" class="btn" style="display: inline-block; padding: 12px 24px;">Free Strategy Call</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Aftab Farooq - Amazon Growth Strategist. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('auditForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            // In a real implementation, you would send this data to a server
+            alert(`Thank you ${name}! Your free audit request has been received. I'll contact you at ${email} within 24 hours to schedule your 15-minute strategy call.`);
+            
+            // Reset form
+            document.getElementById('auditForm').reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
